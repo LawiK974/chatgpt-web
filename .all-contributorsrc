@@ -228,6 +228,24 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "morgan9e",
+      "name": "Morgan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53516171?v=4",
+      "profile": "https://morgan.kr",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "UdonCodes",
+      "name": "Udon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143291288?v=4",
+      "profile": "https://codeberg.org/udon",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "files": [
