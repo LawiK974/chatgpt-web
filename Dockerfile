@@ -1,8 +1,10 @@
-FROM node:18-alpine
+FROM node:20-alpine AS build
 
 ADD . /work
 WORKDIR /work
 
-RUN npm ci
+RUN npm ci && npm run build
 
-CMD ["npm", "run", "dev:public"]
+FROM nginx:stable-alpine-slim
+USER nginx
+COPY --from=build /app/dist /usr/share/nginx/html
