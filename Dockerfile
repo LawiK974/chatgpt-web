@@ -7,4 +7,4 @@ RUN npm ci && npm run build
 
 FROM nginx:stable-alpine-slim
 USER nginx
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /work/dist /usr/share/nginx/html
